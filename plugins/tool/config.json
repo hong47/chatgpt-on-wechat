@@ -1,12 +1,10 @@
 {
-  "tools": ["news","wolfram-alpha"],
+  "tools": ["wolfram-alpha", "news"],
   "kwargs": {
-      "llm_api_key": "",
-      "proxy": "",
-      "debug": false,
+      "debug": true,
+      "request_timeout": 120,
       "no_default": false,
-      "model_name": "gpt-3.5-turbo",
-      "news_api_key": "001c7b926b81467486c8a0b90027ecb1",
-      "wolfram_alpha_appid": "3QQVUQ-X5RL472YXX"
+      "wolfram_alpha_appid": "3QQVUQ-X5RL472YXX",
+      "news_api_key": "001c7b926b81467486c8a0b90027ecb1"
   }
 }
