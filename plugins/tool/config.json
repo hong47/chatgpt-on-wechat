@@ -1,10 +1,10 @@
 {
-  "tools": ["wolfram-alpha", "news"],
+  "tools": ["wolfram-alpha", "news", ],  // 填入你想用到的额外工具名，这里加入了工具"bing-search"和工具"news"(news工具会自动加载morning-news、finance-news等子工具)
   "kwargs": {
-      "debug": true,
-      "request_timeout": 120,
-      "no_default": false,
-      "wolfram_alpha_appid": "3QQVUQ-X5RL472YXX",
-      "news_api_key": "001c7b926b81467486c8a0b90027ecb1"
+      "debug": true, // 当你遇到问题求助时，需要配置
+      "request_timeout": 120,  // openai接口超时时间
+      "no_default": false,  // 是否不使用默认的4个工具
+      "news_api_key": "001c7b926b81467486c8a0b90027ecb1",//带*工具需要申请api-key，这里填入了工具bing-search对应的api，api_name参考前述`工具的api申请方法`
+      "wolfram_alpha_appid": "3QQVUQ-X5RL472YXX",// 这里填入了morning-news对应的api，
   }
 }
