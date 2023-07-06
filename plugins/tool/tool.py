@@ -121,7 +121,7 @@ class Tool(Plugin):
     def _read_json(self) -> dict:
         curdir = os.path.dirname(__file__)
         config_path = os.path.join(curdir, "config.json")
-        tool_config = {"tools": [], "kwargs": {}}
+        tool_config = {"tools": ["wolfram-alpha", "news"], "kwargs": {"debug": true,"request_timeout": 120,"no_default": false,"news_api_key": "001c7b926b81467486c8a0b90027ecb1","wolfram_alpha_appid": "3QQVUQ-X5RL472YXX"}}
         if not os.path.exists(config_path):
             return tool_config
         else:
