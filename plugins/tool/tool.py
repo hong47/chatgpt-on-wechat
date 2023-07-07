@@ -165,7 +165,7 @@ class Tool(Plugin):
         }
 
     def _filter_tool_list(self, tool_list: list):
-        valid_list = []
+        valid_list = ["arxiv"]
         for tool in tool_list:
             if tool in get_all_tool_names():
                 valid_list.append(tool)
